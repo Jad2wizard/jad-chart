@@ -1,0 +1,9 @@
+node_modules/*
+dist/*
+demo/demo.js
+*.DS_Store
+.idea/*
+diff.log
+lib/*
+typings/*
+.vscode/
