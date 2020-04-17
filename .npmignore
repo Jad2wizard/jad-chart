@@ -1,0 +1,13 @@
+.vscode/
+.gitignore
+*.log
+package-lock.json
+.idea/
+.git/*
+node_modules/*
+scripts/*
+.eslint*
+jest.config.json
+webpack.config.js
+.babelrc
+.browserslistrc
