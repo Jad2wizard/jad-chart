@@ -43,6 +43,10 @@
 					"requireLast": false
 				}
 			}
-		]
+		],
+		"@typescript-eslint/interface-name-prefix": {
+			"prefixWithI": "always",
+			"allowUnderscorePrefix": true
+		}
 	}
 }

@@ -7,3 +7,4 @@ diff.log
 lib/*
 typings/*
 .vscode/
+package-lock.json

@@ -1,9 +1,11 @@
-import {getExclamationMarks} from './index'
+import {delay} from './index'
+import * as moment from 'moment'
 
 describe('Test utils', () => {
-	it('Test getExclamationMarks', () => {
-		expect(getExclamationMarks(0)).toEqual('')
-		expect(getExclamationMarks(1)).toEqual('')
-		expect(getExclamationMarks(3)).toEqual('!!')
+	test('Test delay promise', async () => {
+		const start = moment().valueOf()
+		await delay(3000)
+		const d = moment().valueOf() - start
+		expect(d).toBeGreaterThanOrEqual(3000)
 	})
 })

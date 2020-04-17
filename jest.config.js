@@ -1,5 +1,5 @@
 module.exports = {
-	setupFiles: ['./jest.setup.js'],
+	setupFiles: [],
 	transform: {
 		'^.+\\.js?$': 'babel-jest',
 		'^.+\\.ts[x]?$': 'ts-jest'

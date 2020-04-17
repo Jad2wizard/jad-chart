@@ -2,6 +2,7 @@
 	"compilerOptions": {
 		"sourceMap": true,
 		"noImplicitAny": true,
+		"suppressImplicitAnyIndexErrors": true,
 		"strictNullChecks": true,
 		"outDir": "./lib",
 		"declaration": true,
@@ -10,8 +11,9 @@
 		// Search under node_modules for non-relative imports.
 		"moduleResolution": "node",
 		"target": "esnext",
-		"typeRoots": ["node_modules/@types", "./typings/*"],
+		"lib": ["es5", "es6", "dom", "dom.Iterable"],
 		"baseUrl": ".",
+		"typeRoots": ["node_modules/@types", "./typings/*"],
 		"paths": {
 			"three-examples/*": ["node_modules/three/examples/*"],
 			"utils": ["src/utils"]

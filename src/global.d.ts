@@ -1,6 +1,5 @@
-declare module '*.css'
-declare module '*.png'
-declare module '*.less' {
-	const content: any
-	export default content
+declare module 'memoize' {
+	export default function memoize<
+		T extends (...args: any[]) => ReturnType<T>
+	>(fn: T): T
 }

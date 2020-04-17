@@ -1,2 +1,6 @@
 /* eslint-disable no-console */
-console.log('this is just a demo!!!')
+import Chart from '../src'
+
+const chart = new Chart(document.querySelector('#container'))
+
+window.chart = chart
