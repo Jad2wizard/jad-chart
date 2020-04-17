@@ -2,10 +2,11 @@
 	"name": "jadwizard-chart",
 	"version": "0.0.1",
 	"description": "",
-	"main": "index.js",
+	"main": "lib/index.js",
+	"browser": "dist/jad-chart.js",
 	"scripts": {
 		"test": "jest --no-cache",
-		"build": "webpack --mode development",
+		"build": "webpack --mode production",
 		"demo": "webpack-dev-server --mode development",
 		"eslint": "git diff --name-status --cached head > diff.log && node scripts/precommit.js"
 	},
