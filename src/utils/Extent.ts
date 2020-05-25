@@ -7,8 +7,8 @@ export class Extent {
 	private _left: NumStr
 	private _outterWidth: number
 	private _outterHeight: number
-	private _xSplitNumber = 16
-	private _ySplitNumber = 16
+	private _xSplitNumber = 8
+	private _ySplitNumber = 8
 
 	public innerWidth: number
 	public innerHeight: number

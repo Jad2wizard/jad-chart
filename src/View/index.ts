@@ -3,7 +3,7 @@ import * as elementResizeEvent from 'element-resize-event'
 import * as EventEmitter from 'event-emitter'
 import Main from '../index'
 import {Extent, NumStr} from '../utils/Extent'
-import {Vector2} from '../utils/someTypes'
+import {Vector2} from '../utils/types'
 
 class View {
 	public width: number //容器和画布的宽度

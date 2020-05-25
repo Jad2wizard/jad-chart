@@ -176,3 +176,5 @@ export class Color {
 		return rgba
 	}
 }
+
+export type func = (...args: any[]) => any

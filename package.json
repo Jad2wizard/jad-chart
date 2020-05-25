@@ -4,6 +4,7 @@
 	"description": "",
 	"main": "lib/index.js",
 	"browser": "dist/jad-chart.js",
+	"typings": "typings/index.d.ts",
 	"scripts": {
 		"test": "jest --no-cache",
 		"build": "webpack --mode production",

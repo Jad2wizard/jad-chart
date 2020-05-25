@@ -1,5 +1,6 @@
-import Axis from './Axis'
+import AxisPanel from './AxisPanel'
 import View from './View'
+import Renderer from './Renderer'
 
 interface ISeries {
 	type: string
@@ -17,8 +18,9 @@ class Main {
 	public container: HTMLElement
 	public title: string
 	public series: ISeries[]
-	public axisCanvas: Axis //坐标轴画布对象
+	public axisPanel: AxisPanel //坐标轴画布对象
 	public view: View
+	public renderer: Renderer
 
 	constructor(container: HTMLElement, option?: IOption) {
 		this.container = container
@@ -26,21 +28,16 @@ class Main {
 		this.parseOption(option)
 
 		this.view = new View(this, option ? option.padding : undefined)
-		this.axisCanvas = new Axis(this)
 
-		this.animate = this.animate.bind(this)
-		this.animate()
+		this.axisPanel = new AxisPanel(this)
+
+		this.renderer = new Renderer(this)
 	}
 
 	private init(option?: IOption) {}
 
 	public setOption(option: IOption) {
 		this.parseOption(option)
-	}
-
-	public animate() {
-		requestAnimationFrame(this.animate)
-		this.render()
 	}
 
 	private parseOption(option?: IOption) {
@@ -55,10 +52,6 @@ class Main {
 		if (option.series) {
 			this.series = option.series.slice()
 		}
-	}
-
-	private render() {
-		this.axisCanvas.render()
 	}
 }
 
